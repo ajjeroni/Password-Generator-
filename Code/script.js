@@ -91,6 +91,8 @@ var specialCharacters = [
   '_',
   '.',
 ];
+
+
 function generatePassword() {
 var lowercase = confirm("Would you like to include lowercase letters?");
 console.log(lowercase);
@@ -117,6 +119,14 @@ if(numeric) {
   master = master.concat(numericCharacters)
 }
 
+var password = ''
+for (i = 0; i < length; i++) {
+  
+
+  password += randomCharacter
+}
+
+return password
 
 }
 // Add event listener to generate button
