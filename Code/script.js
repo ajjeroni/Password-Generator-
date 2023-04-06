@@ -119,13 +119,11 @@ if(numeric) {
   master = master.concat(numericCharacters)
 }
 
-var password = ''
+var password = " "
 for (i = 0; i < length; i++) {
-  
-
-  password += randomCharacter
+  var randomCharacter = Math.floor(Math.random() * master.length);
+  password += master[randomCharacter]
 }
-
 return password
 
 }
